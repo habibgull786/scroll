@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* HERO / BANNER */}
-      <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 text-center">
+      <section className="bg-teal-600 from-purple-600 to-indigo-600 text-white py-16 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <motion.h1
             className="text-4xl sm:text-5xl font-bold mb-4"
@@ -27,18 +27,15 @@ export default function AboutPage() {
           </motion.p>
         </div>
       </section>
-
-      {/* MISSION / VISION */}
-      <section className="py-16 max-w-5xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
-            <p className="text-gray-700">
+            <h2 className="text-2xl font-bold mb-2  ">Our Mission</h2>
+            <p className="text-gray-700  ">
               At StornSite, our mission is to help businesses establish a powerful online presence through modern,
               scalable, and secure web applications. We strive for innovation and excellence in every project.
             </p>
@@ -57,7 +54,9 @@ export default function AboutPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+ 
+      
+      
 
       {/* VALUES / TEAM / IMAGE */}
       <section className="py-16 bg-white">
@@ -80,14 +79,14 @@ export default function AboutPage() {
             ].map((value, index) => (
               <motion.div
                 key={value.title}
-                className="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition"
+                className="bg-teal-600 rounded-xl p-6 shadow hover:shadow-lg transition"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
                 <h3 className="font-semibold mb-2">{value.title}</h3>
-                <p className="text-sm text-gray-600">{value.desc}</p>
+                <p className="text-sm text-black-600">{value.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -99,11 +98,14 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Image
-              src="/team-placeholder.jpg"
-              alt="Our Team"
-              width={800}
-              height={400}
+            <img
+             src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg"
+             alt='img'
+             width={800}
+             height={800}
+  
+
+
               className="rounded-2xl mx-auto shadow-lg"
             />
             <p className="mt-2 text-sm text-gray-500">Meet our passionate and creative team!</p>

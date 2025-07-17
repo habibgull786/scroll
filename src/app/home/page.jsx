@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      {/* HERO SECTION */}
-      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
+    <main className="min-h-screen bg-[#4d857a]">
+  
+      <section className="bg-[#3c9692] from-indigo-600 to-purple-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <motion.h1
             className="text-4xl sm:text-5xl font-bold mb-4"
-            initial={{ opacity: 0, y: -30 }}
+            initial={{ opacity: 0, y: -25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
@@ -41,7 +41,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURES SECTION */}
+      
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <motion.h2
@@ -76,9 +76,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
+      
       <motion.section
-        className="bg-indigo-700 text-white py-12 text-center"
+        className="bg-teal-600 text-white py-12 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

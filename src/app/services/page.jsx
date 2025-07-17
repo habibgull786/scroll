@@ -6,8 +6,7 @@ import { motion } from 'framer-motion';
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* BANNER */}
-      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16 text-center">
+      <section className="bg-teal-600 from-indigo-600 to-purple-600 text-white py-16 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <motion.h1
             className="text-4xl sm:text-5xl font-bold mb-4"
@@ -28,7 +27,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SERVICES GRID */}
       <section className="py-16 max-w-6xl mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
@@ -52,6 +50,18 @@ export default function ServicesPage() {
               title: 'SEO & Analytics',
               desc: 'We help boost your search engine ranking and provide valuable traffic insights.',
             },
+            {
+              icon: <Code className="text-indigo-600 mb-3" size={32} />,
+              title: 'Digital Marketing',
+              desc: 'Our digital marketing agency identifies your goals, performs competitor benchmark.',
+            },
+            {
+              icon: <Code className="text-indigo-600 mb-3" size={32} />,
+              title: 'E-Commerce ',
+              desc: 'Optimize your website, from design to content seamless journey for visitors.',
+            },
+
+
           ].map((service, index) => (
             <motion.div
               key={service.title}
@@ -71,7 +81,7 @@ export default function ServicesPage() {
 
       {/* CALL TO ACTION */}
       <motion.section
-        className="bg-indigo-700 text-white py-12 text-center"
+        className="bg-teal-700 text-white py-12 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
